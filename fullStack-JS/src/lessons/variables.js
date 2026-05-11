@@ -22,9 +22,11 @@ const nombresVirgule = 77.77
 
 console.log(nombresVirgule)
 
-const helloWorld = function() {
+function helloWorld() {
     console.log('Hello World')
 };
+
+helloWorld()
 
 console.log(tabNombres[2])
 
