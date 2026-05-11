@@ -43,6 +43,6 @@ console.log(monCompteur)
 
 function puissance(a, b) {
     c = 0
-    c = Math.pow(a, b)
+    c = a ** b
     console.log(c)
 }
