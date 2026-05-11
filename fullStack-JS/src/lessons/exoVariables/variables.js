@@ -1,7 +1,7 @@
 const pokemon = {
     name: 'Salamèche',
     type: 'Feu',
-    evo: 'Reptincel',
+    evo: 'Reptincel'
 };
 
 console.log(pokemon)
