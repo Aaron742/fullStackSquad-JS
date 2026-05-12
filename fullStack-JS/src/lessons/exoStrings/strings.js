@@ -1,4 +1,3 @@
-let prix = 15
 let nom = 'Dupont'
 let prenom = "Jean";
 let pizza = 'pizza bolognaise'
