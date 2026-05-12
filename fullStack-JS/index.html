@@ -5,13 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fullstack-js</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
-    <div id="app">
-      <h1>FAHHHH!!</h1>
-      <a href="./src/lessons/exoVariables/variables.html">Variables</a>
-      <a href="./src/lessons/exo/index.html">Calculs</a>
+    <div class="navbar bg-primary shadow-sm">
+        <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+        </button>
+      </div>
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Cours Javascript</a>
+      </div>
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
+        </button>
+      </div>
     </div>
-    <script type="module" src="/src/main.js"></script>
+    <h1>FAHHHH!!</h1>
+    <a href="./src/lessons/exoVariables/variables.html">Variables</a>
+    <a href="./src/lessons/exoCalculs/calcul.html">Calculs</a>
+    <a href="./src/lessons/exoStrings/strings.html">Strings</a>
+    <a href="./history.html">Histoire JS</a>
+  <script type="module" src="/src/main.js"></script>
   </body>
 </html>
