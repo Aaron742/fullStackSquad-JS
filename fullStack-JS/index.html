@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
+    <!----------------- FIL D'ARIANE ----------------->
     <div class="navbar bg-primary shadow-sm">
-        <div class="flex-none">
+
+      <div class="flex-none">
         <button class="btn btn-square btn-ghost">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
         </button>
       </div>
+
       <div class="flex-1">
         <a class="btn btn-ghost text-xl">Cours Javascript</a>
       </div>
@@ -23,11 +26,88 @@
         </button>
       </div>
     </div>
-    <h1>FAHHHH!!</h1>
-    <a href="./src/lessons/exoVariables/variables.html">Variables</a>
-    <a href="./src/lessons/exoCalculs/calcul.html">Calculs</a>
-    <a href="./src/lessons/exoStrings/strings.html">Strings</a>
-    <a href="./history.html">Histoire JS</a>
+    <div class="breadcrumbs text-sm">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+      </ul>
+    </div>
+
+    <!----------------- HERO ----------------->
+    <div class="hero min-h-screen shadow-xl" style="background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/21278.jpg);">
+      <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Cours Javascipt</h1>
+            <p class="mb-5">
+            Tous les cours de JS sont regroupé ici.
+            </p>
+          </div>
+      </div>
+    </div>
+    <!----------------- MAIN ----------------->
+    <span class="text-rotate text-7xl leading-[2]">
+      <span class="justify-items-center">
+        <span>📐 DESIGN</span>
+        <span>⌨️ DEVELOP</span>
+        <span>🌎 DEPLOY</span>
+        <span>🔧 MAINTAIN</span>
+        <span>♻️ REPEAT</span>
+      </span>
+    </span>
+    
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Variables</h2>
+                <a href="./src/lessons/variables.html">Cours sur les variables</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Calculs</h2>
+                <a href="./src/lessons/numbers.html">Cours sur les calculs</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Strings</h2>
+                <a href="./src/lessons/strings.html">Cours sur les chaines de caractères</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Histoire de JS</h2>
+                <a href="./src/lessons/history.html">Petit résumé sur l'histoire de Javascript</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Array</h2>
+                <a href="./src/lessons/exos/array.html">Cours sur les tableaux</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Functions</h2>
+                <a href="./src/lessons/exos/function.html">Cours sur les fonctions</a>
+            </div>
+        </div>
+    </section>
   <script type="module" src="/src/main.js"></script>
   </body>
 </html>
