@@ -45,7 +45,7 @@
       </div>
     </div>
     <!----------------- MAIN ----------------->
-    <span class="text-rotate text-7xl leading-[2]">
+    <span class="text-rotate text-7xl flex justify-center align-middle">
       <span class="justify-items-center">
         <span>📐 DESIGN</span>
         <span>⌨️ DEVELOP</span>
@@ -108,6 +108,60 @@
             </div>
         </div>
     </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Objects</h2>
+                <a href="./src/lessons/exos/objects.html">Cours sur les objets</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Cas d'erreurs</h2>
+                <a href="./src/lessons/exos/casderreur.html">Cours sur les cas d'erreurs</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 DOM</h2>
+                <a href="./src/lessons/exos/dom.html">Cours sur le DOM</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <div class="card bg-primary shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-2xl">👉 Exo DOM</h2>
+                <a href="./src/lessons/exos/exoDom.html">Exo sur le DOM</a>
+            </div>
+        </div>
+    </section>
+
+    <button class="btn" onclick="my_modal_3.showModal()">Suprise</button>
+    <dialog id="my_modal_3" class="modal">
+      <div class="modal-box">
+        <form method="dialog">
+          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+        <div class="hero min-h-screen shadow-xl" style="background-image: url(https://images.wallpaperscraft.com/image/single/flowers_bush_greenhouse_115817_3840x2160.jpg);">
+          <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Connard !</h1>
+              </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
   <script type="module" src="/src/main.js"></script>
   </body>
 </html>
