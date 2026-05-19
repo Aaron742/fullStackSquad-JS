@@ -7,7 +7,7 @@ function ajouterTexte(pseudo, text) {
 
 }
 
-ajouterTexte('John', 'bonjour');
-ajouterTexte("Aaron", "salut");
-ajouterTexte("Pedro", "hello");
-ajouterTexte("Jackie", "buongiorno");
+ajouterTexte('John', 'Bonjour');
+ajouterTexte("Aaron", "Salut");
+ajouterTexte("Pedro", "Hello");
+ajouterTexte("Dante", "Buongiorno");
