@@ -19,7 +19,7 @@ firstImg.alt = 'Photo magnifique'
 
 myDiv.append(firstImg);
 
-let name = document.createElement('h1')
+let name = document.createElement('h2')
 
 name.innerText = userData.name
 
