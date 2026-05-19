@@ -4,7 +4,6 @@ function ajouterTexte(pseudo, text) {
     let message = document.createElement('p')
     message.innerHTML = `<strong>${pseudo}</strong> - ${text}`;
     page.append(message)
-
 }
 
 ajouterTexte('John', 'Bonjour');
