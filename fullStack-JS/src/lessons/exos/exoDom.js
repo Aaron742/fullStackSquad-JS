@@ -41,11 +41,13 @@ dob.innerText = userData.dob;
 
 myDiv.append(dob);
 
-let status = document.createElement("p");
+let active = document.createElement("p");
 
-status.innerText = userData.active;
+// CONDITION TERNAIRE
+active.innerText = userData.active = true ? 'connecté' : 'déconnecté';
 
-myDiv.append(status);
+myDiv.append(active);
 
 myDiv.style.backgroundColor = 'royalblue';
 myDiv.style.color = "white";
+myDiv.style.fontWeight = 'bold'
