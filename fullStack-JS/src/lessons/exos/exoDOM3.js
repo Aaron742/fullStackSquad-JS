@@ -26,8 +26,6 @@ btnThree.addEventListener("click", () => {
 
 // Exo image on click
 
-
-
 document.addEventListener('click', (clickEvent) => {
     // console.log("coord X", clickEvent.pageX);
     // console.log("coord Y", clickEvent.pageY);
