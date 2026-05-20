@@ -33,16 +33,20 @@ document.addEventListener('click', (clickEvent) => {
     // console.log("coord Y", clickEvent.y);
     console.log(clickEvent)
     let addImg = document.createElement("img");
-    addImg.src = "https://picsum.photos/seed/picsum/300/300";
+    const imageSize = 500
+    addImg.src = `https://picsum.photos/${imageSize}/${imageSize}`;
     addImg.style.position = "absolute";
-    addImg.style.top = clickEvent.screenY + -200 + 'px'
-    addImg.style.left = clickEvent.screenX + -150 + 'px'
+    addImg.style.border = '3px solid black'
+    addImg.style.boxShadow = '5px 5px 500px black'
+    addImg.style.top = clickEvent.y - imageSize/2 + 'px'
+    addImg.style.left = clickEvent.x - imageSize/2 + 'px'
     document.body.append(addImg)
 })
 
 // let btnCompteur = document.querySelector('.counter')
 
 // document.addEventListener('click', () => {
-//     btnCompteur.innerHTML = `<span>${btnCompteur}</span>`
-//     btnCompteur++
+//     let compteur = 0
+//     comp
+//     btnCompteur.innerHTML = `<span>${compteur}</span>`
 // })
