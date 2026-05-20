@@ -3,7 +3,6 @@ const title = document.querySelector("h1");
 // Ajouter
 
 const btnOne = document.querySelector("#ajouter");
-console.log(btnOne);
 
 btnOne.addEventListener("click", () => {
     title.classList.add("bg-primary");
@@ -12,7 +11,6 @@ btnOne.addEventListener("click", () => {
 // Supprimer
 
 const btnTwo = document.querySelector("#supprimer");
-console.log(btnTwo);
 
 btnTwo.addEventListener("click", () => {
     title.classList.remove("bg-primary");
@@ -21,8 +19,24 @@ btnTwo.addEventListener("click", () => {
 // Toggle
 
 const btnThree = document.querySelector("#activer");
-console.log(btnThree);
 
 btnThree.addEventListener("click", () => {
     title.classList.toggle("bg-primary");
 });
+
+// Exo image on click
+
+
+
+document.addEventListener('click', (clickEvent) => {
+    // console.log("coord X", clickEvent.pageX);
+    // console.log("coord Y", clickEvent.pageY);
+    // console.log("coord X", clickEvent.x);
+    // console.log("coord Y", clickEvent.y);
+    let addImg = document.createElement("img");
+    addImg.src = "https://picsum.photos/seed/picsum/200/300";
+    addImg.style.position = "absolute";
+    addImg.style.top = clickEvent.y + 'px'
+    addImg.style.left = clickEvent.x + 'px'
+    document.body.append(addImg)
+})
