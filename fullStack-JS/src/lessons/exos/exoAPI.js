@@ -26,22 +26,6 @@
 // };
 // contactApiSecurePlus();
 
-// const apiPokemon = document.querySelector('.apiPoke')
-
-// async function pokeAPI() {
-//     const dataPok = await fetch("https://pokeapi.co/api/v2/pokemon/");
-//     const pokeJson = await dataPok.json()
-//     const pokeName = pokeJson.results.map((x) => x.name)
-//     console.log(pokeName);
-//     pokeName.forEach(element => {
-//         let createP = document.createElement("p");
-//         createP.innerText = element
-//         console.log(createP)
-//         document.body.append(createP)
-//     });
-// }
-// pokeAPI()
-
 const apiPokemon = document.querySelector(".apiPoke");
 
 async function pokeAPI() {
@@ -50,6 +34,7 @@ async function pokeAPI() {
     pokeJson.results.forEach((element) => {
         let createP = document.createElement("p");
         createP.innerText = element.name;
+        createP.style.fontFamily = 'impact'
         document.body.append(createP);
     });
 }
