@@ -57,6 +57,7 @@ let focusBlur = document.querySelector('input')
 
 focusBlur.addEventListener('focus', () => {
     focusBlur.style.backgroundColor = 'royalblue'
+    focusBlur.style.color = 'white'
 })
 
 focusBlur.addEventListener('blur', () => {
