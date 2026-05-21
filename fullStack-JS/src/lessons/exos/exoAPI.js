@@ -29,13 +29,24 @@
 const apiPokemon = document.querySelector(".apiPoke");
 
 async function pokeAPI() {
-    const dataPok = await fetch("https://pokeapi.co/api/v2/pokemon/");
-    const pokeJson = await dataPok.json();
-    pokeJson.results.forEach((element) => {
-        let createP = document.createElement("p");
-        createP.innerText = element.name;
-        createP.style.fontFamily = 'impact'
-        document.body.append(createP);
-    });
+    try {
+        const dataPok = await fetch("https://pokeapi.co/api/v2/pokemon/");
+        if (!dataPok.ok || dataPok.status !== 200) {
+            console.error('Erreur de récup API')
+            return
+        }
+        const pokeJson = await dataPok.json();
+        console.log(pokeJson)
+        pokeJson.results.forEach((element) => {
+            let createP = document.createElement("p");
+            createP.innerText = element.name;
+            apiPokemon.append(createP)
+        });
+    } catch (error) {
+        console.error('Erreur de l\'appel API'), error
+    }
+    
 }
 pokeAPI();
+
+apiPokemon.classList.add('bg-primary', 'text-warning', 'text-center', 'mt-20')
