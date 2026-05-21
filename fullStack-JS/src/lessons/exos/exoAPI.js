@@ -49,4 +49,4 @@ async function pokeAPI() {
 }
 pokeAPI();
 
-apiPokemon.classList.add('bg-primary', 'text-warning', 'text-center', 'mt-20')
+apiPokemon.classList.add('text-warning', 'text-center', 'mt-20')
