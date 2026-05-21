@@ -26,18 +26,32 @@
 // };
 // contactApiSecurePlus();
 
-const apiPokemon = document.querySelector('.apiPoke')
+// const apiPokemon = document.querySelector('.apiPoke')
+
+// async function pokeAPI() {
+//     const dataPok = await fetch("https://pokeapi.co/api/v2/pokemon/");
+//     const pokeJson = await dataPok.json()
+//     const pokeName = pokeJson.results.map((x) => x.name)
+//     console.log(pokeName);
+//     pokeName.forEach(element => {
+//         let createP = document.createElement("p");
+//         createP.innerText = element
+//         console.log(createP)
+//         document.body.append(createP)
+//     });
+// }
+// pokeAPI()
+
+const apiPokemon = document.querySelector(".apiPoke");
 
 async function pokeAPI() {
     const dataPok = await fetch("https://pokeapi.co/api/v2/pokemon/");
-    const pokeJson = await dataPok.json()
-    const pokeName = pokeJson.results.map((x) => x.name)
-    console.log(pokeName);
-    pokeName.forEach(element => {
+    const pokeJson = await dataPok.json();
+    pokeJson.results.forEach((element) => {
         let createP = document.createElement("p");
-        createP.innerText = element
-        console.log(createP)
-        document.body.append(createP)
+        createP.innerText = element.name;
+        console.log(createP);
+        document.body.append(createP);
     });
 }
-pokeAPI()
+pokeAPI();
