@@ -50,7 +50,6 @@ async function pokeAPI() {
     pokeJson.results.forEach((element) => {
         let createP = document.createElement("p");
         createP.innerText = element.name;
-        console.log(createP);
         document.body.append(createP);
     });
 }
