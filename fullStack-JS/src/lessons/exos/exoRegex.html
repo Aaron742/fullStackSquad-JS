@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo Regex</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="./exoRegex.js" defer></script>
+</head>
+<body>
+    <h1 class="font-bold text-center">REGEX</h1>
+    <div class="formulaire flex justify-center items-center mt-5">
+        <form method="get" class="bg-blue-500 text-white w-150 p-10 flex flex-col shadow-2xl">
+            <h1 class="font-bold text-center mb-5">Connexion</h1>
+            <label for="login-mail">Identifiant</label>
+            <input type="text" class="input text-black w-100" id="login-mail" placeholder="Adresse mail">
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" class="input text-black w-100" placeholder="************">
+            <p id="errorSection" class="mt-4 w-100"></p>
+            <a href="#">Mot de passe oublié ?</a>
+            <button class="btn btn-warning mt-5 animate-bounce">Se connecter</button>
+            <p>Pas encore de compte ? <a href="#">Créer un compte</a></p>
+        </form>
+    </div>
+    <div class="error"></div>
+    
+</body>
+</html>
